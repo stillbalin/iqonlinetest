@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <main>
+        <div id="calendar" class="calendar">
+            <div class="calendar__header calendar__header-gray">
+                <div class="calendar__box calendar__box-big clearfix">
+                    <div class="col_left">
+                        <div class="buttons">
+                            <a href="#" class="button button-blue" id="open_addModal">Добавить</a>
+                            <div class="calendar__addModal">
+                                <div class="modal_wrap addModal_wrap">
+                                    <form action="#" class="calendar__form-default">
+                                        <input id="form__input" class="form__input-default form__input-full" type="text" placeholder="5 марта, 14:00, День рождения">
+                                        <button class="modal_button">Создать</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <a href="#" class="button button-blue button-padLeft">Обновить</a>
+                        </div>
+                    </div>
+                    <div class="col_right">
+                        <div class="search">
+                            <form action="#" class="search__form">
+                                <label class="search__icon" for="search__form_input"></label>
+                                <input id="search__form_input" class="form__input-default" type="text" placeholder="Событие, дата или участник">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar__body">
+                <div class="calendar__box calendar__box-big calendar__box-topPad clearfix">
+                    <div class="calendar__monthChanger">
+                        <span class="monthChanger__btn monthChanger__btn-gray prev">
+                            <img src="img/left_i.png" alt="">
+                        </span>
+                        <span class="monthChanger__month">Март, 2013</span>
+                        <span class="monthChanger__btn monthChanger__btn-gray next">
+                            <img src="img/right_i.png" alt="">
+                        </span>
+                        <span class="monthChanger__btn monthChanger__btn-gray next">
+                            Сегодня
+                        </span>
+                    </div>
+                    <table class="calendar__table">
+                        <thead>
+                            <tr>
+                                <td>Понедельник, 25</td>
+                                <td>Вторник, 26</td>
+                                <td>Среда, 27</td>
+                                <td>Четверг, 28</td>
+                                <td>Пятница, 1</td>
+                                <td>Суббота, 2</td>
+                                <td>Воскресенье, 3</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td class="td_content">
+                                    <div>
+                                        <div class="td_content_day">8</div>
+                                        <div class="td_content_text">
+                                            <div class="text_title"><b>Напиться!</b></div>
+                                            <div class="text_names">Витя Костин, Петр Михайлов</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td class="td_content">
+                                    <div>
+                                        <div class="td_content_day">14</div>
+                                        <div class="td_content_text">
+                                            <div class="text_title"><b>ДР!</b></div>
+                                            <div class="text_names">Витя Костин</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>
